@@ -1,0 +1,20 @@
+{
+  "name": "mlntn/lumen-artisan-serve",
+  "type": "library",
+  "description": "artisan serve for Lumen projects",
+  "keywords": ["lumen","artisan"],
+  "homepage": "http://github.com/mlntn/lumen-artisan-serve",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jared Mellentine",
+      "email": "jared@mellentine.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-0": {
+      "Mlntn\Console\Commands": "src/"
+    }
+  }
+}

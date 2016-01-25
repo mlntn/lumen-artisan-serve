@@ -8,6 +8,6 @@ artisan serve for Lumen projects
 
 2. Add the following line to the $commands array in app/Console/Kernel.php:
 
-`\Mlntn\Console\Commands\Serve::class,`
+    `\Mlntn\Console\Commands\Serve::class,`
 
 3. artisan serve

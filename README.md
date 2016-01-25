@@ -11,3 +11,7 @@ artisan serve for Lumen projects
     `\Mlntn\Console\Commands\Serve::class,`
 
 3. artisan serve
+
+# Disclaimer
+
+I didn't write most of this code. It comes straight from [laravel/framework](https://github.com/laravel/framework) by [@taylorotwell](https://github.com/taylorotwell). I did have to tweak a few things to get it going for Lumen. Enjoy!

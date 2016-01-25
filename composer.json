@@ -13,8 +13,7 @@
   ],
   "minimum-stability": "stable",
   "autoload": {
-    "psr-0": {
-      "Mlntn\\Console\\Commands": "src/"
+    "classmap": ["src/"]
     }
   }
 }

@@ -33,8 +33,6 @@ class Serve extends Command {
    */
   public function fire() {
 
-    chdir($this->laravel->basePath() . '/public');
-
     $host = $this->input->getOption('host');
 
     $port = $this->input->getOption('port');
@@ -42,6 +40,8 @@ class Serve extends Command {
     $base = ProcessUtils::escapeArgument(__DIR__);
 
     $binary = ProcessUtils::escapeArgument((new PhpExecutableFinder)->find(false));
+
+    $docroot = $this->laravel->basePath() . '/public';
 
     $this->info("Lumen development server started on http://{$host}:{$port}/");
 
@@ -54,7 +54,7 @@ class Serve extends Command {
       }
     }
     else {
-      passthru("{$binary} -S {$host}:{$port} {$base}/server.php");
+      passthru("{$binary} -S {$host}:{$port} -t {$docroot} {$base}/server.php");
     }
   }
 

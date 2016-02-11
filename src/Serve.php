@@ -47,7 +47,7 @@ class Serve extends Command {
 
     if (defined('HHVM_VERSION')) {
       if (version_compare(HHVM_VERSION, '3.8.0') >= 0) {
-        passthru("{$binary} -m server -v Server.Type=proxygen -v Server.SourceRoot={$base}/ -v Server.IP={$host} -v Server.Port={$port} -v Server.DefaultDocument=server.php -v Server.ErrorDocument404=server.php");
+        passthru("{$binary} -m server -v Server.Type=proxygen -v Server.SourceRoot={$base}/ -v Server.IncludeSearchPaths.docroot={$docroot} -v Server.IP={$host} -v Server.Port={$port} -v Server.DefaultDocument=server.php -v Server.ErrorDocument404=server.php");
       }
       else {
         throw new Exception("HHVM's built-in server requires HHVM >= 3.8.0.");

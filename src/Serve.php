@@ -54,7 +54,7 @@ class Serve extends Command {
       }
     }
     else {
-      passthru("{$binary} -S {$host}:{$port} -t {$docroot} {$base}/server.php");
+      passthru("{$binary} -S {$host}:{$port} -t '{$docroot}' {$base}/server.php");
     }
   }
 

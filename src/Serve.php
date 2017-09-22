@@ -31,7 +31,7 @@ class Serve extends Command {
    *
    * @throws \Exception
    */
-  public function fire() {
+  public function handle() {
 
     $host = $this->input->getOption('host');
 

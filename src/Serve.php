@@ -4,7 +4,7 @@ namespace Mlntn\Console\Commands;
 
 use Exception;
 use Illuminate\Console\Command;
-use Symfony\Component\Process\ProcessUtils;
+use Illuminate\Support\ProcessUtils;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Process\PhpExecutableFinder;
 

@@ -42,7 +42,7 @@ class Serve extends Command
     {
         chdir(public_path());
 
-        $this->line("<info>Starting Laravel development server:</info> http://{$this->host()}:{$this->port()}");
+        $this->line("<info>Starting Lumen development server:</info> http://{$this->host()}:{$this->port()}");
 
         $environmentFile = $this->option('env')
             ? base_path('.env').'.'.$this->option('env')

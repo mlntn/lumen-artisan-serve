@@ -1,9 +1,9 @@
 {
-  "name": "mlntn/lumen-artisan-serve",
+  "name": "cryental/lumen-artisan-serve",
   "type": "library",
   "description": "artisan serve for Lumen projects",
   "keywords": ["lumen","artisan"],
-  "homepage": "http://github.com/mlntn/lumen-artisan-serve",
+  "homepage": "http://github.com/cryental/lumen-artisan-serve",
   "license": "MIT",
   "authors": [
     {
